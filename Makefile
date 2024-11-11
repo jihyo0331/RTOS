@@ -11,6 +11,7 @@ LINKER_SCRIPT = ./navilos.ld
 ASM_SRCS = $(wildcard boot/*.S)
 ASM_OBJS = $(wildcard boot/%.S, build/%.o, $(ASM_SRCS))
 
+INC_DIRS = include
 
 navilos = boot/navilos.axf
 navilos_bin = boot/navilos.bin
@@ -37,4 +38,4 @@ $(navilos): $(ASM_OBJS) $(LINKER_SCRIPT)
 
 build/Entry.o: boot/%.S
 	mkdir -p $(shel dirname $@)
-	$(AS) -march=$(ARCH) -mcpu=$(MCPU) -g -o $@ $<
+	$(CC) -march=$(ARCH) -mcpu=$(MCPU) -I $(INC_DIRS) -g -o $@ $<

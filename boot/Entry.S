@@ -57,7 +57,13 @@
 		MSR	cpsr, r1
 		LDR	sp, =UND_STACK_TOP
 
-		
+		MRS	r0, cpsr
+		BIC	r1, r0, #0x1F
+		ORR	r1, r1, #ARM_MODE_BIT_SYS
+		MSR	cpsr, r1
+		LDR	sp, =USRSYS_STACK_TOP
+
+
 
 	dummy_handler:
 		B .
