@@ -1,0 +1,2 @@
+#define INST_ADDR_START	0
+
