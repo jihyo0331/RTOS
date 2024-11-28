@@ -5,6 +5,7 @@
 #include "HalInterrupt.h"
 
 #include "Kernel.h"
+#include "msg.h"
 
 extern volatile PL011_t* Uart;
 
@@ -58,6 +59,6 @@ static void interrupt_handler(void) {
     }
 
     Hal_uart_put_char(ch);
-    Kernel_send_msg(KernelMsgQ__Task0, &ch, 1);
+    Kernel_send_msg(KernelMsgQ_Task0, &ch, 1);
     Kernel_send_events(KernelEventFlag_UartIn);
 }
