@@ -5,3 +5,5 @@
 *.swp
 /out/
 build/out/
+*.qcow.2
+*.raw

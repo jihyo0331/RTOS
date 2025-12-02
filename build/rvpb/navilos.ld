@@ -16,5 +16,13 @@ SECTIONS
 	.bss :
 	{
 		*(.bss)
+		*(COMMON)
 	}
+
+    /* Place framebuffer in low RAM after code/data (within 1MB memory) */
+    . = 0x00040000;
+    .fb :
+    {
+        *(.fb)
+    }
 }

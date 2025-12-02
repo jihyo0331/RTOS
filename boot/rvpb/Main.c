@@ -28,8 +28,8 @@
 #define LCD_WIDTH       640
 #define LCD_HEIGHT      480
 
-// 16bpp RGB565 framebuffer; aligned for the controller
-static uint16_t lcd_framebuffer[LCD_HEIGHT][LCD_WIDTH] __attribute__((aligned(16)));
+// 16bpp RGB565 framebuffer; aligned for the controller, placed in .fb (see linker)
+static uint16_t lcd_framebuffer[LCD_HEIGHT][LCD_WIDTH] __attribute__((aligned(16), section(".fb")));
 
 // 8x8 bitmap font (ASCII 32-127)
 static const uint8_t font8x8_basic[96][8] = {

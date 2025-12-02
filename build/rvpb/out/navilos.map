@@ -537,8 +537,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a
 
 .bss
  *(.bss)
-OUTPUT(./out/navilos.axf elf32-littlearm)
-LOAD linker stubs
+ *(COMMON)
 
 .bss.shared_value
                 0x00001820        0x4
@@ -555,72 +554,74 @@ LOAD linker stubs
  .bss.lcd_console_row
                 0x00001828        0x4 ./out/Main.o
 
-.bss.lcd_framebuffer
-                0x00001830    0x96000
- .bss.lcd_framebuffer
-                0x00001830    0x96000 ./out/Main.o
-
-.bss.sHandlers  0x00097830      0x3fc
+.bss.sHandlers  0x0000182c      0x3fc
  .bss.sHandlers
-                0x00097830      0x3fc ./out/Interrupt.o
+                0x0000182c      0x3fc ./out/Interrupt.o
 
 .bss.sTick_accum
-                0x00097c2c        0x4
+                0x00001c28        0x4
  .bss.sTick_accum
-                0x00097c2c        0x4 ./out/Timer.o
+                0x00001c28        0x4 ./out/Timer.o
 
 .bss.sInternal_1ms_counter
-                0x00097c30        0x4
+                0x00001c2c        0x4
  .bss.sInternal_1ms_counter
-                0x00097c30        0x4 ./out/Timer.o
+                0x00001c2c        0x4 ./out/Timer.o
 
 .bss.sPrintf_buf
-                0x00097c34      0x400
+                0x00001c30      0x400
  .bss.sPrintf_buf
-                0x00097c34      0x400 ./out/stdio.o
+                0x00001c30      0x400 ./out/stdio.o
 
 .bss.sEventFlag
-                0x00098034        0x4
+                0x00002030        0x4
  .bss.sEventFlag
-                0x00098034        0x4 ./out/event.o
+                0x00002030        0x4 ./out/event.o
 
-.bss.sMsgQ      0x00098038      0x618
- .bss.sMsgQ     0x00098038      0x618 ./out/msg.o
+.bss.sMsgQ      0x00002034      0x618
+ .bss.sMsgQ     0x00002034      0x618 ./out/msg.o
 
-.bss.sMutex     0x00098650        0x8
- .bss.sMutex    0x00098650        0x8 ./out/synch.o
+.bss.sMutex     0x0000264c        0x8
+ .bss.sMutex    0x0000264c        0x8 ./out/synch.o
 
-.bss.sSem       0x00098658        0x4
- .bss.sSem      0x00098658        0x4 ./out/synch.o
+.bss.sSem       0x00002654        0x4
+ .bss.sSem      0x00002654        0x4 ./out/synch.o
 
-.bss.sSemMax    0x0009865c        0x4
- .bss.sSemMax   0x0009865c        0x4 ./out/synch.o
+.bss.sSemMax    0x00002658        0x4
+ .bss.sSemMax   0x00002658        0x4 ./out/synch.o
 
 .bss.sCurrent_tcb_index
-                0x00098660        0x4
+                0x0000265c        0x4
  .bss.sCurrent_tcb_index
-                0x00098660        0x4 ./out/task.o
+                0x0000265c        0x4 ./out/task.o
 
 .bss.sAllocated_tcb_index
-                0x00098664        0x4
+                0x00002660        0x4
  .bss.sAllocated_tcb_index
-                0x00098664        0x4 ./out/task.o
+                0x00002660        0x4 ./out/task.o
 
 .bss.sTask_list
-                0x00098668       0x30
+                0x00002664       0x30
  .bss.sTask_list
-                0x00098668       0x30 ./out/task.o
+                0x00002664       0x30 ./out/task.o
 
-.bss.gNext_tcb  0x00098698        0x4
+.bss.gNext_tcb  0x00002694        0x4
  .bss.gNext_tcb
-                0x00098698        0x4 ./out/task.o
-                0x00098698                gNext_tcb
+                0x00002694        0x4 ./out/task.o
+                0x00002694                gNext_tcb
 
 .bss.gCurrent_tcb
-                0x0009869c        0x4
+                0x00002698        0x4
  .bss.gCurrent_tcb
-                0x0009869c        0x4 ./out/task.o
-                0x0009869c                gCurrent_tcb
+                0x00002698        0x4 ./out/task.o
+                0x00002698                gCurrent_tcb
+                0x00040000                        . = 0x40000
+
+.fb             0x00040000    0x96000
+ *(.fb)
+ .fb            0x00040000    0x96000 ./out/Main.o
+OUTPUT(./out/navilos.axf elf32-littlearm)
+LOAD linker stubs
 
 .ARM.attributes
                 0x00000000       0x2b
