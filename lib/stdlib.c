@@ -23,7 +23,8 @@ void delay(uint32_t ms)
 {
     uint32_t goal = Hal_timer_get_1ms_counter() + ms;
 
-    while(goal != Hal_timer_get_1ms_counter());
+    // cooperative wait: spin until timer reaches goal
+    while(Hal_timer_get_1ms_counter() - goal != 0);
 }
 
 void memclr(void* dst, uint32_t count)

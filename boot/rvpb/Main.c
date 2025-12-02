@@ -492,6 +492,8 @@ void User_task2(void)
 
     while(true)
     {
+        // Throttle output so other tasks/logs can run
+        Kernel_wait_events(KernelEventFlag_Tick);
         Test_critical_section(3, 2);
         Kernel_yield();
     }
