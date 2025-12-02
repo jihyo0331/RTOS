@@ -13,12 +13,19 @@
 
 static char sPrintf_buf[PRINTF_BUF_LEN];   // 1KB
 
+__attribute__((weak)) void Lcd_console_putc(char ch)
+{
+    (void)ch;
+}
+
 uint32_t putstr(const char* s)
 {
     uint32_t c = 0;
     while(*s)
     {
-        Hal_uart_put_char(*s++);
+        char ch = *s++;
+        Hal_uart_put_char(ch);
+        Lcd_console_putc(ch);
         c++;
     }
     return c;

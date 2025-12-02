@@ -49,7 +49,9 @@ LDFLAGS = -nostartfiles -nostdlib -nodefaultlibs -static -lgcc -Wl,--gc-sections
 navilos = $(OUTDIR)/navilos.axf
 navilos_bin = $(OUTDIR)/navilos.bin
 
-.PHONY: all clean run debug gdb
+DISPLAY_OPTS ?= sdl
+
+.PHONY: all clean run run-gui run-gui-vc debug debug-gui debug-gui-vc gdb
 
 all: $(navilos)
 
@@ -61,8 +63,22 @@ MONITOR_PORT ?= 5555
 run: $(navilos)
 	( stty raw -echo; qemu-system-arm -M realview-pb-a8 -m 1 -kernel $(navilos) -nographic -serial stdio -monitor telnet:127.0.0.1:$(MONITOR_PORT),server,nowait; stty sane )
 	
+run-gui: $(navilos)
+	qemu-system-arm -M realview-pb-a8 -m 1 -kernel $(navilos) -display $(DISPLAY_OPTS) -serial stdio -monitor telnet:127.0.0.1:$(MONITOR_PORT),server,nowait
+
+# GUI 창 안에 별도 터미널(virtual console)로 UART를 표시
+run-gui-vc: $(navilos)
+	qemu-system-arm -M realview-pb-a8 -m 1 -kernel $(navilos) -display $(DISPLAY_OPTS) -serial vc -monitor telnet:127.0.0.1:$(MONITOR_PORT),server,nowait
+	
 debug: $(navilos)
 	qemu-system-arm -M realview-pb-a8 -m 1 -kernel $(navilos) -nographic -serial stdio -monitor telnet:127.0.0.1:$(MONITOR_PORT),server,nowait -S -gdb tcp::1234,ipv4
+
+debug-gui: $(navilos)
+	qemu-system-arm -M realview-pb-a8 -m 1 -kernel $(navilos) -display $(DISPLAY_OPTS) -serial stdio -monitor telnet:127.0.0.1:$(MONITOR_PORT),server,nowait -S -gdb tcp::1234,ipv4
+
+# GUI 창 안에 virtual console 사용 + GDB 대기
+debug-gui-vc: $(navilos)
+	qemu-system-arm -M realview-pb-a8 -m 1 -kernel $(navilos) -display $(DISPLAY_OPTS) -serial vc -monitor telnet:127.0.0.1:$(MONITOR_PORT),server,nowait -S -gdb tcp::1234,ipv4
 	
 gdb:
 	gdb-multiarch $(navilos)
