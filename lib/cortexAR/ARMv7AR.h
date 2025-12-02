@@ -1,4 +1,4 @@
-//ARMv7AR.h
+/* PSR Mode Bit Values */
 #define ARM_MODE_BIT_USR 0x10
 #define ARM_MODE_BIT_FIQ 0x11
 #define ARM_MODE_BIT_IRQ 0x12

@@ -1,3 +1,10 @@
+/*
+ * HalUart.h
+ *
+ *  Created on: Sep 8, 2018
+ *      Author: maanu
+ */
+
 #ifndef HAL_HALUART_H_
 #define HAL_HALUART_H_
 

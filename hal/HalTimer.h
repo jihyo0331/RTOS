@@ -1,3 +1,10 @@
+/*
+ * HalTimer.h
+ *
+ *  Created on: Sep 27, 2018
+ *      Author: yiman
+ */
+
 #ifndef HAL_HALTIMER_H_
 #define HAL_HALTIMER_H_
 

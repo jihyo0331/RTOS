@@ -1,3 +1,10 @@
+/*
+ * synch.c
+ *
+ *  Created on: Nov 8, 2018
+ *      Author: maanu
+ */
+
 #include "stdint.h"
 #include "stdbool.h"
 
@@ -67,3 +74,4 @@ bool Kernel_mutex_unlock(uint32_t owner)
     }
     return false;
 }
+

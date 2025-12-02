@@ -1,1 +1,3 @@
-#define PSR_INIT 0x21000000  
+#include "ARMv7AR.h"
+
+#define PSR_INIT ARM_MODE_BIT_SYS 

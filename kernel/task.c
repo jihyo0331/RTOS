@@ -1,3 +1,11 @@
+/*
+ * task.c
+ *
+ *  Created on: Oct 22, 2018
+ *      Author: maanu
+ */
+
+
 #include "stdint.h"
 #include "stdbool.h"
 
@@ -27,13 +35,7 @@ void Kernel_task_init(void)
     for(uint32_t i = 0 ; i < MAX_TASK_NUM ; i++)
     {
         sTask_list[i].stack_base = (uint8_t*)(TASK_STACK_START + (i * USR_TASK_STACK_SIZE));
-        sTask_list[i].sp = (uint32_t)sTask_list[i].stack_base + USR_TASK_STACK_SIZE - 4;
-
-        sTask_list[i].sp -= sizeof(KernelTaskContext_t);
-        KernelTaskContext_t* ctx = (KernelTaskContext_t*)sTask_list[i].sp;
-
-        ctx->pc = 0;
-        ctx->spsr = PSR_INIT;
+        sTask_list[i].sp = (uint32_t)sTask_list[i].stack_base + USR_TASK_STACK_SIZE;
     }
 }
 
@@ -52,8 +54,19 @@ uint32_t Kernel_task_create(KernelTaskFunc_t startFunc)
         return NOT_ENOUGH_TASK_NUM;
     }
 
-    KernelTaskContext_t* ctx = (KernelTaskContext_t*)new_tcb->sp;
-    ctx->pc = (uint32_t)startFunc;
+    // Build initial stack frame matching Arch_Restore_context pop order:
+    // [spsr][r0..r12][pc]
+    uint32_t* sp = (uint32_t*)new_tcb->sp;
+    sp -= (1 /*spsr*/ + 13 /*r0-r12*/ + 1 /*pc*/);
+
+    sp[0] = PSR_INIT;            // will be popped into r0 then written to cpsr
+    for (uint32_t i = 0; i < 13; i++)
+    {
+        sp[1 + i] = 0;           // r0-r12
+    }
+    sp[14] = (uint32_t)startFunc; // pc
+
+    new_tcb->sp = (uint32_t)sp;
 
     return (sAllocated_tcb_index - 1);
 }

@@ -1,3 +1,9 @@
+/*
+ * event.c
+ *
+ *  Created on: Nov 2, 2018
+ *      Author: maanu
+ */
 
 #include "stdint.h"
 #include "stdbool.h"
@@ -30,3 +36,4 @@ bool Kernel_event_flag_check(KernelEventFlag_t event)
     }
     return false;
 }
+

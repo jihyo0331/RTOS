@@ -1,20 +1,20 @@
 /*
-* Handler.c
-* 
-* Createdd on: 2024-11-25
-*	Author: maanu
-*/
+ * Handler.c
+ *
+ *  Created on: Sep 22, 2018
+ *      Author: maanu
+ */
 
 #include "stdbool.h"
 #include "stdint.h"
-#include "HnaIInterrup.h"
+#include "HalInterrupt.h"
 
-__attribute__ ((interrupt("IRQ")))
-void Irq_Handler(void) {
-	Hal_interrupt_run_handler();
+ __attribute__ ((interrupt ("IRQ"))) void Irq_Handler(void)
+{
+    Hal_interrupt_run_handler();
 }
 
-__atteribute__ ((interrrupt("FIQ")))
-void Fiq_Handler(void) {
-	while (1);
+ __attribute__ ((interrupt ("FIQ"))) void Fiq_Handler(void)
+{
+    while(true);
 }
