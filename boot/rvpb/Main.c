@@ -216,14 +216,21 @@ static void Lcd_draw_char(uint32_t row, uint32_t col, char ch)
     }
 }
 
-static void Lcd_copy_up(uint32_t lines)
+static void __attribute__((noinline, optimize("O0"))) Lcd_copy_up(uint32_t lines)
 {
     // Move framebuffer up by 'lines' lines (each line = LCD_WIDTH pixels)
     // Safe because destination is below source.
+    if (lines >= LCD_HEIGHT)
+    {
+        return;
+    }
+
     uint32_t total_pixels = (LCD_HEIGHT - lines) * LCD_WIDTH;
+    uint16_t* dst = &lcd_framebuffer[0][0];
+    uint16_t* src = &lcd_framebuffer[lines][0];
     for (uint32_t i = 0; i < total_pixels; i++)
     {
-        lcd_framebuffer[0][i] = lcd_framebuffer[lines][i];
+        dst[i] = src[i];
     }
 }
 
