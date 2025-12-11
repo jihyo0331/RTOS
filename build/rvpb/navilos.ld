@@ -13,6 +13,13 @@ SECTIONS
 	{
 		*(.data)
 	}
+    /* Dedicated stress region at 11KB~12KB */
+    . = 0x00002c00;
+    .stress :
+    {
+        *(.stress)
+    }
+
 	.bss :
 	{
 		*(.bss)

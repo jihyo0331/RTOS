@@ -1,7 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
-                              ./out/stdio.o (__aeabi_uidivmod)
+                              ./out/Main.o (__aeabi_uidivmod)
 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
                               /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
 
@@ -156,445 +156,460 @@ LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a
                 0x000004a8       0x58 ./out/Main.o
 
 .text.User_task2
-                0x00000500       0x38
+                0x00000500       0xa0
  .text.User_task2
-                0x00000500       0x38 ./out/Main.o
+                0x00000500       0xa0 ./out/Main.o
                 0x00000500                User_task2
 
 .text.User_task0
-                0x00000538      0x1ac
+                0x000005a0      0x1ac
  .text.User_task0
-                0x00000538      0x1ac ./out/Main.o
-                0x00000538                User_task0
+                0x000005a0      0x1ac ./out/Main.o
+                0x000005a0                User_task0
 
 .text.User_task1
-                0x000006e4       0x8c
+                0x0000074c       0x8c
  .text.User_task1
-                0x000006e4       0x8c ./out/Main.o
-                0x000006e4                User_task1
+                0x0000074c       0x8c ./out/Main.o
+                0x0000074c                User_task1
 
 .text.Lcd_scroll
-                0x00000770       0x40
+                0x000007d8       0x40
  .text.Lcd_scroll
-                0x00000770       0x40 ./out/Main.o
+                0x000007d8       0x40 ./out/Main.o
 
 .text.Lcd_console_putc
-                0x000007b0       0xe8
+                0x00000818       0xe8
  .text.Lcd_console_putc
-                0x000007b0       0xe8 ./out/Main.o
-                0x000007b0                Lcd_console_putc
+                0x00000818       0xe8 ./out/Main.o
+                0x00000818                Lcd_console_putc
 
 .text.startup.main
-                0x00000898      0x1d8
+                0x00000900      0x1d8
  .text.startup.main
-                0x00000898      0x1d8 ./out/Main.o
-                0x00000898                main
+                0x00000900      0x1d8 ./out/Main.o
+                0x00000900                main
 
 .text.Hal_interrupt_init
-                0x00000a70       0x5c
+                0x00000ad8       0x5c
  .text.Hal_interrupt_init
-                0x00000a70       0x5c ./out/Interrupt.o
-                0x00000a70                Hal_interrupt_init
+                0x00000ad8       0x5c ./out/Interrupt.o
+                0x00000ad8                Hal_interrupt_init
 
 .text.Hal_interrupt_enable
-                0x00000acc       0x40
+                0x00000b34       0x40
  .text.Hal_interrupt_enable
-                0x00000acc       0x40 ./out/Interrupt.o
-                0x00000acc                Hal_interrupt_enable
+                0x00000b34       0x40 ./out/Interrupt.o
+                0x00000b34                Hal_interrupt_enable
 
 .text.Hal_interrupt_register_handler
-                0x00000b0c       0x10
+                0x00000b74       0x10
  .text.Hal_interrupt_register_handler
-                0x00000b0c       0x10 ./out/Interrupt.o
-                0x00000b0c                Hal_interrupt_register_handler
+                0x00000b74       0x10 ./out/Interrupt.o
+                0x00000b74                Hal_interrupt_register_handler
 
 .text.Hal_interrupt_run_handler
-                0x00000b1c       0x44
+                0x00000b84       0x44
  .text.Hal_interrupt_run_handler
-                0x00000b1c       0x44 ./out/Interrupt.o
-                0x00000b1c                Hal_interrupt_run_handler
+                0x00000b84       0x44 ./out/Interrupt.o
+                0x00000b84                Hal_interrupt_run_handler
 
 .text.interrupt_handler
-                0x00000b60       0xe0
+                0x00000bc8       0xe0
  .text.interrupt_handler
-                0x00000b60       0x70 ./out/Timer.o
+                0x00000bc8       0x70 ./out/Timer.o
  .text.interrupt_handler
-                0x00000bd0       0x70 ./out/Uart.o
+                0x00000c38       0x70 ./out/Uart.o
 
 .text.Hal_timer_init
-                0x00000c40       0xe0
+                0x00000ca8       0xe0
  .text.Hal_timer_init
-                0x00000c40       0xe0 ./out/Timer.o
-                0x00000c40                Hal_timer_init
+                0x00000ca8       0xe0 ./out/Timer.o
+                0x00000ca8                Hal_timer_init
 
 .text.Hal_timer_get_1ms_counter
-                0x00000d20       0x10
+                0x00000d88       0x10
  .text.Hal_timer_get_1ms_counter
-                0x00000d20       0x10 ./out/Timer.o
-                0x00000d20                Hal_timer_get_1ms_counter
+                0x00000d88       0x10 ./out/Timer.o
+                0x00000d88                Hal_timer_get_1ms_counter
 
 .text.Hal_uart_init
-                0x00000d30       0x68
+                0x00000d98       0x68
  .text.Hal_uart_init
-                0x00000d30       0x68 ./out/Uart.o
-                0x00000d30                Hal_uart_init
+                0x00000d98       0x68 ./out/Uart.o
+                0x00000d98                Hal_uart_init
 
 .text.Hal_uart_put_char
-                0x00000d98       0x20
+                0x00000e00       0x20
  .text.Hal_uart_put_char
-                0x00000d98       0x20 ./out/Uart.o
-                0x00000d98                Hal_uart_put_char
+                0x00000e00       0x20 ./out/Uart.o
+                0x00000e00                Hal_uart_put_char
 
 .text.Hal_uart_get_char
-                0x00000db8       0x34
+                0x00000e20       0x34
  .text.Hal_uart_get_char
-                0x00000db8       0x34 ./out/Uart.o
-                0x00000db8                Hal_uart_get_char
+                0x00000e20       0x34 ./out/Uart.o
+                0x00000e20                Hal_uart_get_char
 
-.text.putstr    0x00000dec       0x38
- .text.putstr   0x00000dec       0x38 ./out/stdio.o
-                0x00000dec                putstr
+.text.putstr    0x00000e54       0x38
+ .text.putstr   0x00000e54       0x38 ./out/stdio.o
+                0x00000e54                putstr
 
-.text.utoa      0x00000e24       0x7c
- .text.utoa     0x00000e24       0x7c ./out/stdio.o
-                0x00000e24                utoa
+.text.utoa      0x00000e8c       0x7c
+ .text.utoa     0x00000e8c       0x7c ./out/stdio.o
+                0x00000e8c                utoa
 
-.text.vsprintf  0x00000ea0       0xe4
+.text.vsprintf  0x00000f08       0xe4
  .text.vsprintf
-                0x00000ea0       0xe4 ./out/stdio.o
-                0x00000ea0                vsprintf
+                0x00000f08       0xe4 ./out/stdio.o
+                0x00000f08                vsprintf
 
 .text.debug_printf
-                0x00000f84       0x3c
+                0x00000fec       0x3c
  .text.debug_printf
-                0x00000f84       0x3c ./out/stdio.o
-                0x00000f84                debug_printf
+                0x00000fec       0x3c ./out/stdio.o
+                0x00000fec                debug_printf
 
-.text.memset    0x00000fc0       0x18
- .text.memset   0x00000fc0       0x18 ./out/stdlib.o
-                0x00000fc0                memset
+.text.memset    0x00001028       0x18
+ .text.memset   0x00001028       0x18 ./out/stdlib.o
+                0x00001028                memset
 
-.text.delay     0x00000fd8       0x20
- .text.delay    0x00000fd8       0x20 ./out/stdlib.o
-                0x00000fd8                delay
+.text.delay     0x00001040       0x20
+ .text.delay    0x00001040       0x20 ./out/stdlib.o
+                0x00001040                delay
 
-.text.memclr    0x00000ff8        0xc
- .text.memclr   0x00000ff8        0xc ./out/stdlib.o
-                0x00000ff8                memclr
+.text.memclr    0x00001060        0xc
+ .text.memclr   0x00001060        0xc ./out/stdlib.o
+                0x00001060                memclr
 
 .text.enable_irq
-                0x00001004       0x18
+                0x0000106c       0x18
  .text.enable_irq
-                0x00001004       0x18 ./out/armcpu.o
-                0x00001004                enable_irq
+                0x0000106c       0x18 ./out/armcpu.o
+                0x0000106c                enable_irq
 
 .text.disable_irq
-                0x0000101c       0x18
+                0x00001084       0x18
  .text.disable_irq
-                0x0000101c       0x18 ./out/armcpu.o
-                0x0000101c                disable_irq
+                0x00001084       0x18 ./out/armcpu.o
+                0x00001084                disable_irq
 
 .text.Arch_start
-                0x00001034        0x4
+                0x0000109c        0x4
  .text.Arch_start
-                0x00001034        0x4 ./out/switch.o
-                0x00001034                Arch_start
+                0x0000109c        0x4 ./out/switch.o
+                0x0000109c                Arch_start
 
 .text.Arch_context_switching
-                0x00001038        0x8
+                0x000010a0        0x8
  .text.Arch_context_switching
-                0x00001038        0x8 ./out/switch.o
-                0x00001038                Arch_context_switching
+                0x000010a0        0x8 ./out/switch.o
+                0x000010a0                Arch_context_switching
 
 .text.Arch_Save_context
-                0x00001040       0x20
+                0x000010a8       0x20
  .text.Arch_Save_context
-                0x00001040       0x20 ./out/switch.o
-                0x00001040                Arch_Save_context
+                0x000010a8       0x20 ./out/switch.o
+                0x000010a8                Arch_Save_context
 
 .text.Arch_Restore_context
-                0x00001060       0x20
+                0x000010c8       0x20
  .text.Arch_Restore_context
-                0x00001060       0x20 ./out/switch.o
-                0x00001060                Arch_Restore_context
+                0x000010c8       0x20 ./out/switch.o
+                0x000010c8                Arch_Restore_context
 
 .text.Kernel_event_flag_init
-                0x00001080       0x14
+                0x000010e8       0x14
  .text.Kernel_event_flag_init
-                0x00001080       0x14 ./out/event.o
-                0x00001080                Kernel_event_flag_init
+                0x000010e8       0x14 ./out/event.o
+                0x000010e8                Kernel_event_flag_init
 
 .text.Kernel_event_flag_set
-                0x00001094       0x18
+                0x000010fc       0x18
  .text.Kernel_event_flag_set
-                0x00001094       0x18 ./out/event.o
-                0x00001094                Kernel_event_flag_set
+                0x000010fc       0x18 ./out/event.o
+                0x000010fc                Kernel_event_flag_set
 
 .text.Kernel_event_flag_clear
-                0x000010ac       0x18
+                0x00001114       0x18
  .text.Kernel_event_flag_clear
-                0x000010ac       0x18 ./out/event.o
-                0x000010ac                Kernel_event_flag_clear
+                0x00001114       0x18 ./out/event.o
+                0x00001114                Kernel_event_flag_clear
 
 .text.Kernel_event_flag_check
-                0x000010c4       0x2c
+                0x0000112c       0x2c
  .text.Kernel_event_flag_check
-                0x000010c4       0x2c ./out/event.o
-                0x000010c4                Kernel_event_flag_check
+                0x0000112c       0x2c ./out/event.o
+                0x0000112c                Kernel_event_flag_check
 
 .text.Kernel_start
-                0x000010f0       0x10
+                0x00001158       0x10
  .text.Kernel_start
-                0x000010f0       0x10 ./out/Kernel.o
-                0x000010f0                Kernel_start
+                0x00001158       0x10 ./out/Kernel.o
+                0x00001158                Kernel_start
 
 .text.Kernel_yield
-                0x00001100        0x4
+                0x00001168        0x4
  .text.Kernel_yield
-                0x00001100        0x4 ./out/Kernel.o
-                0x00001100                Kernel_yield
+                0x00001168        0x4 ./out/Kernel.o
+                0x00001168                Kernel_yield
 
 .text.Kernel_send_events
-                0x00001104       0x3c
+                0x0000116c       0x3c
  .text.Kernel_send_events
-                0x00001104       0x3c ./out/Kernel.o
-                0x00001104                Kernel_send_events
+                0x0000116c       0x3c ./out/Kernel.o
+                0x0000116c                Kernel_send_events
 
 .text.Kernel_wait_events
-                0x00001140       0x4c
+                0x000011a8       0x4c
  .text.Kernel_wait_events
-                0x00001140       0x4c ./out/Kernel.o
-                0x00001140                Kernel_wait_events
+                0x000011a8       0x4c ./out/Kernel.o
+                0x000011a8                Kernel_wait_events
 
 .text.Kernel_send_msg
-                0x0000118c       0x50
+                0x000011f4       0x50
  .text.Kernel_send_msg
-                0x0000118c       0x50 ./out/Kernel.o
-                0x0000118c                Kernel_send_msg
+                0x000011f4       0x50 ./out/Kernel.o
+                0x000011f4                Kernel_send_msg
 
 .text.Kernel_recv_msg
-                0x000011dc       0x40
+                0x00001244       0x40
  .text.Kernel_recv_msg
-                0x000011dc       0x40 ./out/Kernel.o
-                0x000011dc                Kernel_recv_msg
+                0x00001244       0x40 ./out/Kernel.o
+                0x00001244                Kernel_recv_msg
 
 .text.Kernel_lock_mutex
-                0x0000121c       0x1c
+                0x00001284       0x1c
  .text.Kernel_lock_mutex
-                0x0000121c       0x1c ./out/Kernel.o
-                0x0000121c                Kernel_lock_mutex
+                0x00001284       0x1c ./out/Kernel.o
+                0x00001284                Kernel_lock_mutex
 
 .text.Kernel_unlock_mutex
-                0x00001238       0x1c
+                0x000012a0       0x1c
  .text.Kernel_unlock_mutex
-                0x00001238       0x1c ./out/Kernel.o
-                0x00001238                Kernel_unlock_mutex
+                0x000012a0       0x1c ./out/Kernel.o
+                0x000012a0                Kernel_unlock_mutex
 
 .text.Kernel_msgQ_init
-                0x00001254       0x54
+                0x000012bc       0x54
  .text.Kernel_msgQ_init
-                0x00001254       0x54 ./out/msg.o
-                0x00001254                Kernel_msgQ_init
+                0x000012bc       0x54 ./out/msg.o
+                0x000012bc                Kernel_msgQ_init
 
 .text.Kernel_msgQ_is_empty
-                0x000012a8       0x3c
+                0x00001310       0x3c
  .text.Kernel_msgQ_is_empty
-                0x000012a8       0x3c ./out/msg.o
-                0x000012a8                Kernel_msgQ_is_empty
+                0x00001310       0x3c ./out/msg.o
+                0x00001310                Kernel_msgQ_is_empty
 
 .text.Kernel_msgQ_is_full
-                0x000012e4       0x44
+                0x0000134c       0x44
  .text.Kernel_msgQ_is_full
-                0x000012e4       0x44 ./out/msg.o
-                0x000012e4                Kernel_msgQ_is_full
+                0x0000134c       0x44 ./out/msg.o
+                0x0000134c                Kernel_msgQ_is_full
 
 .text.Kernel_msgQ_enqueue
-                0x00001328       0x60
+                0x00001390       0x60
  .text.Kernel_msgQ_enqueue
-                0x00001328       0x60 ./out/msg.o
-                0x00001328                Kernel_msgQ_enqueue
+                0x00001390       0x60 ./out/msg.o
+                0x00001390                Kernel_msgQ_enqueue
 
 .text.Kernel_msgQ_dequeue
-                0x00001388       0x68
+                0x000013f0       0x68
  .text.Kernel_msgQ_dequeue
-                0x00001388       0x68 ./out/msg.o
-                0x00001388                Kernel_msgQ_dequeue
+                0x000013f0       0x68 ./out/msg.o
+                0x000013f0                Kernel_msgQ_dequeue
 
 .text.Kernel_msgQ_count
-                0x000013f0       0x24
+                0x00001458       0x24
  .text.Kernel_msgQ_count
-                0x000013f0       0x24 ./out/msg.o
-                0x000013f0                Kernel_msgQ_count
+                0x00001458       0x24 ./out/msg.o
+                0x00001458                Kernel_msgQ_count
 
 .text.Kernel_sem_init
-                0x00001414       0x24
+                0x0000147c       0x24
  .text.Kernel_sem_init
-                0x00001414       0x24 ./out/synch.o
-                0x00001414                Kernel_sem_init
+                0x0000147c       0x24 ./out/synch.o
+                0x0000147c                Kernel_sem_init
 
 .text.Kernel_mutex_init
-                0x00001438       0x18
+                0x000014a0       0x18
  .text.Kernel_mutex_init
-                0x00001438       0x18 ./out/synch.o
-                0x00001438                Kernel_mutex_init
+                0x000014a0       0x18 ./out/synch.o
+                0x000014a0                Kernel_mutex_init
 
 .text.Kernel_mutex_lock
-                0x00001450       0x24
+                0x000014b8       0x24
  .text.Kernel_mutex_lock
-                0x00001450       0x24 ./out/synch.o
-                0x00001450                Kernel_mutex_lock
+                0x000014b8       0x24 ./out/synch.o
+                0x000014b8                Kernel_mutex_lock
 
 .text.Kernel_mutex_unlock
-                0x00001474       0x20
+                0x000014dc       0x20
  .text.Kernel_mutex_unlock
-                0x00001474       0x20 ./out/synch.o
-                0x00001474                Kernel_mutex_unlock
+                0x000014dc       0x20 ./out/synch.o
+                0x000014dc                Kernel_mutex_unlock
 
 .text.Kernel_task_init
-                0x00001494       0x74
+                0x000014fc       0x74
  .text.Kernel_task_init
-                0x00001494       0x74 ./out/task.o
-                0x00001494                Kernel_task_init
+                0x000014fc       0x74 ./out/task.o
+                0x000014fc                Kernel_task_init
 
 .text.Kernel_task_start
-                0x00001508       0x28
+                0x00001570       0x28
  .text.Kernel_task_start
-                0x00001508       0x28 ./out/task.o
-                0x00001508                Kernel_task_start
+                0x00001570       0x28 ./out/task.o
+                0x00001570                Kernel_task_start
 
 .text.Kernel_task_create
-                0x00001530       0x60
+                0x00001598       0x60
  .text.Kernel_task_create
-                0x00001530       0x60 ./out/task.o
-                0x00001530                Kernel_task_create
+                0x00001598       0x60 ./out/task.o
+                0x00001598                Kernel_task_create
 
 .text.Kernel_task_get_current_task_id
-                0x00001590       0x10
+                0x000015f8       0x10
  .text.Kernel_task_get_current_task_id
-                0x00001590       0x10 ./out/task.o
-                0x00001590                Kernel_task_get_current_task_id
+                0x000015f8       0x10 ./out/task.o
+                0x000015f8                Kernel_task_get_current_task_id
 
 .text.Kernel_task_scheduler
-                0x000015a0       0x58
+                0x00001608       0x58
  .text.Kernel_task_scheduler
-                0x000015a0       0x58 ./out/task.o
-                0x000015a0                Kernel_task_scheduler
+                0x00001608       0x58 ./out/task.o
+                0x00001608                Kernel_task_scheduler
 
 .rodata.font8x8_basic
-                0x000015f8      0x300
+                0x00001660      0x300
  .rodata.font8x8_basic
-                0x000015f8      0x300 ./out/Main.o
+                0x00001660      0x300 ./out/Main.o
 
 .rodata.vsprintf.str1.1
-                0x000018f8        0x7
+                0x00001960        0x7
  .rodata.vsprintf.str1.1
-                0x000018f8        0x7 ./out/stdio.o
+                0x00001960        0x7 ./out/stdio.o
 
-.rel.dyn        0x00001900        0x0
- .rel.iplt      0x00001900        0x0 ./out/Entry.os
+.rel.dyn        0x00001968        0x0
+ .rel.iplt      0x00001968        0x0 ./out/Entry.os
 
 .data
  *(.data)
 
-.igot.plt       0x00001900        0x0
- .igot.plt      0x00001900        0x0 ./out/Entry.os
+.igot.plt       0x00001968        0x0
+ .igot.plt      0x00001968        0x0 ./out/Entry.os
 
-.data.Timer     0x00001900        0x4
- .data.Timer    0x00001900        0x4 ./out/Regs.o
-                0x00001900                Timer
+.data.pattern.0
+                0x00001967        0x1
+ .data.pattern.0
+                0x00001967        0x1 ./out/Main.o
 
-.data.GicDist   0x00001904        0x4
- .data.GicDist  0x00001904        0x4 ./out/Regs.o
-                0x00001904                GicDist
+.data.stress_rng.1
+                0x00001968        0x4
+ .data.stress_rng.1
+                0x00001968        0x4 ./out/Main.o
 
-.data.GicCpu    0x00001908        0x4
- .data.GicCpu   0x00001908        0x4 ./out/Regs.o
-                0x00001908                GicCpu
+.data.Timer     0x0000196c        0x4
+ .data.Timer    0x0000196c        0x4 ./out/Regs.o
+                0x0000196c                Timer
 
-.data.Uart      0x0000190c        0x4
- .data.Uart     0x0000190c        0x4 ./out/Regs.o
-                0x0000190c                Uart
+.data.GicDist   0x00001970        0x4
+ .data.GicDist  0x00001970        0x4 ./out/Regs.o
+                0x00001970                GicDist
+
+.data.GicCpu    0x00001974        0x4
+ .data.GicCpu   0x00001974        0x4 ./out/Regs.o
+                0x00001974                GicCpu
+
+.data.Uart      0x00001978        0x4
+ .data.Uart     0x00001978        0x4 ./out/Regs.o
+                0x00001978                Uart
+                0x00002c00                        . = 0x2c00
+
+.stress         0x00002c00      0x400
+ *(.stress)
+ .stress        0x00002c00      0x400 ./out/Main.o
 
 .bss
  *(.bss)
  *(COMMON)
 
 .bss.shared_value
-                0x00001910        0x4
+                0x00003000        0x4
  .bss.shared_value
-                0x00001910        0x4 ./out/Main.o
+                0x00003000        0x4 ./out/Main.o
 
 .bss.lcd_console_col
-                0x00001914        0x4
+                0x00003004        0x4
  .bss.lcd_console_col
-                0x00001914        0x4 ./out/Main.o
+                0x00003004        0x4 ./out/Main.o
 
 .bss.lcd_console_row
-                0x00001918        0x4
+                0x00003008        0x4
  .bss.lcd_console_row
-                0x00001918        0x4 ./out/Main.o
+                0x00003008        0x4 ./out/Main.o
 
-.bss.sHandlers  0x0000191c      0x3fc
+.bss.sHandlers  0x0000300c      0x3fc
  .bss.sHandlers
-                0x0000191c      0x3fc ./out/Interrupt.o
+                0x0000300c      0x3fc ./out/Interrupt.o
 
 .bss.sTick_accum
-                0x00001d18        0x4
+                0x00003408        0x4
  .bss.sTick_accum
-                0x00001d18        0x4 ./out/Timer.o
+                0x00003408        0x4 ./out/Timer.o
 
 .bss.sInternal_1ms_counter
-                0x00001d1c        0x4
+                0x0000340c        0x4
  .bss.sInternal_1ms_counter
-                0x00001d1c        0x4 ./out/Timer.o
+                0x0000340c        0x4 ./out/Timer.o
 
 .bss.sPrintf_buf
-                0x00001d20      0x400
+                0x00003410      0x400
  .bss.sPrintf_buf
-                0x00001d20      0x400 ./out/stdio.o
+                0x00003410      0x400 ./out/stdio.o
 
 .bss.sEventFlag
-                0x00002120        0x4
+                0x00003810        0x4
  .bss.sEventFlag
-                0x00002120        0x4 ./out/event.o
+                0x00003810        0x4 ./out/event.o
 
-.bss.sMsgQ      0x00002124      0x618
- .bss.sMsgQ     0x00002124      0x618 ./out/msg.o
+.bss.sMsgQ      0x00003814      0x618
+ .bss.sMsgQ     0x00003814      0x618 ./out/msg.o
 
-.bss.sMutex     0x0000273c        0x8
- .bss.sMutex    0x0000273c        0x8 ./out/synch.o
+.bss.sMutex     0x00003e2c        0x8
+ .bss.sMutex    0x00003e2c        0x8 ./out/synch.o
 
-.bss.sSem       0x00002744        0x4
- .bss.sSem      0x00002744        0x4 ./out/synch.o
+.bss.sSem       0x00003e34        0x4
+ .bss.sSem      0x00003e34        0x4 ./out/synch.o
 
-.bss.sSemMax    0x00002748        0x4
- .bss.sSemMax   0x00002748        0x4 ./out/synch.o
+.bss.sSemMax    0x00003e38        0x4
+ .bss.sSemMax   0x00003e38        0x4 ./out/synch.o
 
 .bss.sCurrent_tcb_index
-                0x0000274c        0x4
+                0x00003e3c        0x4
  .bss.sCurrent_tcb_index
-                0x0000274c        0x4 ./out/task.o
+                0x00003e3c        0x4 ./out/task.o
 
 .bss.sAllocated_tcb_index
-                0x00002750        0x4
+                0x00003e40        0x4
  .bss.sAllocated_tcb_index
-                0x00002750        0x4 ./out/task.o
+                0x00003e40        0x4 ./out/task.o
 
 .bss.sTask_list
-                0x00002754       0x30
+                0x00003e44       0x30
  .bss.sTask_list
-                0x00002754       0x30 ./out/task.o
+                0x00003e44       0x30 ./out/task.o
 
-.bss.gNext_tcb  0x00002784        0x4
+.bss.gNext_tcb  0x00003e74        0x4
  .bss.gNext_tcb
-                0x00002784        0x4 ./out/task.o
-                0x00002784                gNext_tcb
+                0x00003e74        0x4 ./out/task.o
+                0x00003e74                gNext_tcb
 
 .bss.gCurrent_tcb
-                0x00002788        0x4
+                0x00003e78        0x4
  .bss.gCurrent_tcb
-                0x00002788        0x4 ./out/task.o
-                0x00002788                gCurrent_tcb
+                0x00003e78        0x4 ./out/task.o
+                0x00003e78                gCurrent_tcb
                 0x00040000                        . = 0x40000
 
 .fb             0x00040000    0x96000
@@ -660,25 +675,25 @@ LOAD linker stubs
  .comment       0x00000026       0x27 ./out/synch.o
  .comment       0x00000026       0x27 ./out/task.o
 
-.debug_line     0x00000000     0x1d62
+.debug_line     0x00000000     0x1e06
  .debug_line    0x00000000       0x7a ./out/Entry.os
  .debug_line    0x0000007a       0x8b ./out/Handler.o
- .debug_line    0x00000105      0x675 ./out/Main.o
- .debug_line    0x0000077a      0x1d8 ./out/Interrupt.o
- .debug_line    0x00000952       0x74 ./out/Regs.o
- .debug_line    0x000009c6      0x1c8 ./out/Timer.o
- .debug_line    0x00000b8e      0x1f9 ./out/Uart.o
- .debug_line    0x00000d87      0x28d ./out/stdio.o
- .debug_line    0x00001014       0xf1 ./out/stdlib.o
- .debug_line    0x00001105       0xac ./out/armcpu.o
- .debug_line    0x000011b1       0xa5 ./out/switch.o
- .debug_line    0x00001256       0xe0 ./out/event.o
- .debug_line    0x00001336      0x349 ./out/Kernel.o
- .debug_line    0x0000167f      0x244 ./out/msg.o
- .debug_line    0x000018c3      0x169 ./out/synch.o
- .debug_line    0x00001a2c      0x285 ./out/task.o
- .debug_line    0x00001cb1       0x67 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
- .debug_line    0x00001d18       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00000105      0x719 ./out/Main.o
+ .debug_line    0x0000081e      0x1d8 ./out/Interrupt.o
+ .debug_line    0x000009f6       0x74 ./out/Regs.o
+ .debug_line    0x00000a6a      0x1c8 ./out/Timer.o
+ .debug_line    0x00000c32      0x1f9 ./out/Uart.o
+ .debug_line    0x00000e2b      0x28d ./out/stdio.o
+ .debug_line    0x000010b8       0xf1 ./out/stdlib.o
+ .debug_line    0x000011a9       0xac ./out/armcpu.o
+ .debug_line    0x00001255       0xa5 ./out/switch.o
+ .debug_line    0x000012fa       0xe0 ./out/event.o
+ .debug_line    0x000013da      0x349 ./out/Kernel.o
+ .debug_line    0x00001723      0x244 ./out/msg.o
+ .debug_line    0x00001967      0x169 ./out/synch.o
+ .debug_line    0x00001ad0      0x285 ./out/task.o
+ .debug_line    0x00001d55       0x67 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_line    0x00001dbc       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
 
 .debug_line_str
                 0x00000000       0xb2
@@ -690,45 +705,45 @@ LOAD linker stubs
  .debug_line_str
                 0x000000b2       0x7e /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
 
-.debug_info     0x00000000     0x549e
+.debug_info     0x00000000     0x556a
  .debug_info    0x00000000       0x25 ./out/Entry.os
  .debug_info    0x00000025       0x95 ./out/Handler.o
- .debug_info    0x000000ba     0x1786 ./out/Main.o
- .debug_info    0x00001840      0x5fc ./out/Interrupt.o
- .debug_info    0x00001e3c      0xfc5 ./out/Regs.o
- .debug_info    0x00002e01      0x41e ./out/Timer.o
- .debug_info    0x0000321f      0xbb1 ./out/Uart.o
- .debug_info    0x00003dd0      0x3a3 ./out/stdio.o
- .debug_info    0x00004173      0x1af ./out/stdlib.o
- .debug_info    0x00004322       0x67 ./out/armcpu.o
- .debug_info    0x00004389       0x9f ./out/switch.o
- .debug_info    0x00004428      0x234 ./out/event.o
- .debug_info    0x0000465c      0x64e ./out/Kernel.o
- .debug_info    0x00004caa      0x364 ./out/msg.o
- .debug_info    0x0000500e      0x196 ./out/synch.o
- .debug_info    0x000051a4      0x280 ./out/task.o
- .debug_info    0x00005424       0x3e /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
- .debug_info    0x00005462       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000ba     0x1852 ./out/Main.o
+ .debug_info    0x0000190c      0x5fc ./out/Interrupt.o
+ .debug_info    0x00001f08      0xfc5 ./out/Regs.o
+ .debug_info    0x00002ecd      0x41e ./out/Timer.o
+ .debug_info    0x000032eb      0xbb1 ./out/Uart.o
+ .debug_info    0x00003e9c      0x3a3 ./out/stdio.o
+ .debug_info    0x0000423f      0x1af ./out/stdlib.o
+ .debug_info    0x000043ee       0x67 ./out/armcpu.o
+ .debug_info    0x00004455       0x9f ./out/switch.o
+ .debug_info    0x000044f4      0x234 ./out/event.o
+ .debug_info    0x00004728      0x64e ./out/Kernel.o
+ .debug_info    0x00004d76      0x364 ./out/msg.o
+ .debug_info    0x000050da      0x196 ./out/synch.o
+ .debug_info    0x00005270      0x280 ./out/task.o
+ .debug_info    0x000054f0       0x3e /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_info    0x0000552e       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
 
-.debug_abbrev   0x00000000     0x180e
+.debug_abbrev   0x00000000     0x1827
  .debug_abbrev  0x00000000       0x14 ./out/Entry.os
  .debug_abbrev  0x00000014       0x78 ./out/Handler.o
- .debug_abbrev  0x0000008c      0x490 ./out/Main.o
- .debug_abbrev  0x0000051c      0x210 ./out/Interrupt.o
- .debug_abbrev  0x0000072c      0x122 ./out/Regs.o
- .debug_abbrev  0x0000084e      0x1cb ./out/Timer.o
- .debug_abbrev  0x00000a19      0x24b ./out/Uart.o
- .debug_abbrev  0x00000c64      0x1f2 ./out/stdio.o
- .debug_abbrev  0x00000e56      0x13e ./out/stdlib.o
- .debug_abbrev  0x00000f94       0x2f ./out/armcpu.o
- .debug_abbrev  0x00000fc3       0x45 ./out/switch.o
- .debug_abbrev  0x00001008      0x106 ./out/event.o
- .debug_abbrev  0x0000110e      0x1eb ./out/Kernel.o
- .debug_abbrev  0x000012f9      0x1e5 ./out/msg.o
- .debug_abbrev  0x000014de      0x106 ./out/synch.o
- .debug_abbrev  0x000015e4      0x1dc ./out/task.o
- .debug_abbrev  0x000017c0       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
- .debug_abbrev  0x000017e8       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000008c      0x4a9 ./out/Main.o
+ .debug_abbrev  0x00000535      0x210 ./out/Interrupt.o
+ .debug_abbrev  0x00000745      0x122 ./out/Regs.o
+ .debug_abbrev  0x00000867      0x1cb ./out/Timer.o
+ .debug_abbrev  0x00000a32      0x24b ./out/Uart.o
+ .debug_abbrev  0x00000c7d      0x1f2 ./out/stdio.o
+ .debug_abbrev  0x00000e6f      0x13e ./out/stdlib.o
+ .debug_abbrev  0x00000fad       0x2f ./out/armcpu.o
+ .debug_abbrev  0x00000fdc       0x45 ./out/switch.o
+ .debug_abbrev  0x00001021      0x106 ./out/event.o
+ .debug_abbrev  0x00001127      0x1eb ./out/Kernel.o
+ .debug_abbrev  0x00001312      0x1e5 ./out/msg.o
+ .debug_abbrev  0x000014f7      0x106 ./out/synch.o
+ .debug_abbrev  0x000015fd      0x1dc ./out/task.o
+ .debug_abbrev  0x000017d9       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x00001801       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
 
 .debug_aranges  0x00000000      0x3f8
  .debug_aranges
@@ -768,57 +783,57 @@ LOAD linker stubs
  .debug_aranges
                 0x000003d8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
 
-.debug_str      0x00000000     0x1419
- .debug_str     0x00000000     0x1419 ./out/Entry.os
+.debug_str      0x00000000     0x1459
+ .debug_str     0x00000000     0x1459 ./out/Entry.os
                                  0x40 (size before relaxing)
- .debug_str     0x00001419      0x155 ./out/Handler.o
- .debug_str     0x00001419      0xb3e ./out/Main.o
- .debug_str     0x00001419      0x3fd ./out/Interrupt.o
- .debug_str     0x00001419      0x6cb ./out/Regs.o
- .debug_str     0x00001419      0x654 ./out/Timer.o
- .debug_str     0x00001419      0x895 ./out/Uart.o
- .debug_str     0x00001419      0x1e1 ./out/stdio.o
- .debug_str     0x00001419      0x17d ./out/stdlib.o
- .debug_str     0x00001419       0xea ./out/armcpu.o
- .debug_str     0x00001419      0x16e ./out/switch.o
- .debug_str     0x00001419      0x50a ./out/event.o
- .debug_str     0x00001419      0x70f ./out/Kernel.o
- .debug_str     0x00001419      0x235 ./out/msg.o
- .debug_str     0x00001419      0x1cd ./out/synch.o
- .debug_str     0x00001419      0x289 ./out/task.o
- .debug_str     0x00001419       0xa5 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
- .debug_str     0x00001419       0xa6 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x00001459      0x155 ./out/Handler.o
+ .debug_str     0x00001459      0xb8f ./out/Main.o
+ .debug_str     0x00001459      0x3fd ./out/Interrupt.o
+ .debug_str     0x00001459      0x6cb ./out/Regs.o
+ .debug_str     0x00001459      0x654 ./out/Timer.o
+ .debug_str     0x00001459      0x895 ./out/Uart.o
+ .debug_str     0x00001459      0x1e1 ./out/stdio.o
+ .debug_str     0x00001459      0x17d ./out/stdlib.o
+ .debug_str     0x00001459       0xea ./out/armcpu.o
+ .debug_str     0x00001459      0x16e ./out/switch.o
+ .debug_str     0x00001459      0x50a ./out/event.o
+ .debug_str     0x00001459      0x70f ./out/Kernel.o
+ .debug_str     0x00001459      0x235 ./out/msg.o
+ .debug_str     0x00001459      0x1cd ./out/synch.o
+ .debug_str     0x00001459      0x289 ./out/task.o
+ .debug_str     0x00001459       0xa5 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_str     0x00001459       0xa6 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
 
 .debug_rnglists
-                0x00000000      0x3a9
+                0x00000000      0x3cb
  .debug_rnglists
                 0x00000000       0x19 ./out/Handler.o
  .debug_rnglists
-                0x00000019       0xde ./out/Main.o
+                0x00000019      0x100 ./out/Main.o
  .debug_rnglists
-                0x000000f7       0x3a ./out/Interrupt.o
+                0x00000119       0x3a ./out/Interrupt.o
  .debug_rnglists
-                0x00000131       0x20 ./out/Timer.o
+                0x00000153       0x20 ./out/Timer.o
  .debug_rnglists
-                0x00000151       0x25 ./out/Uart.o
+                0x00000173       0x25 ./out/Uart.o
  .debug_rnglists
-                0x00000176       0x4e ./out/stdio.o
+                0x00000198       0x4e ./out/stdio.o
  .debug_rnglists
-                0x000001c4       0x1f ./out/stdlib.o
+                0x000001e6       0x1f ./out/stdlib.o
  .debug_rnglists
-                0x000001e3       0x25 ./out/armcpu.o
+                0x00000205       0x25 ./out/armcpu.o
  .debug_rnglists
-                0x00000208       0x25 ./out/switch.o
+                0x0000022a       0x25 ./out/switch.o
  .debug_rnglists
-                0x0000022d       0x25 ./out/event.o
+                0x0000024f       0x25 ./out/event.o
  .debug_rnglists
-                0x00000252       0xa0 ./out/Kernel.o
+                0x00000274       0xa0 ./out/Kernel.o
  .debug_rnglists
-                0x000002f2       0x40 ./out/msg.o
+                0x00000314       0x40 ./out/msg.o
  .debug_rnglists
-                0x00000332       0x31 ./out/synch.o
+                0x00000354       0x31 ./out/synch.o
  .debug_rnglists
-                0x00000363       0x46 ./out/task.o
+                0x00000385       0x46 ./out/task.o
 
 .debug_frame    0x00000000      0x780
  .debug_frame   0x00000000       0x40 ./out/Handler.o
@@ -838,24 +853,24 @@ LOAD linker stubs
  .debug_frame   0x00000760       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
 
 .debug_loclists
-                0x00000000      0xb7c
+                0x00000000      0xbac
  .debug_loclists
-                0x00000000      0x26f ./out/Main.o
+                0x00000000      0x29f ./out/Main.o
  .debug_loclists
-                0x0000026f       0x5a ./out/Interrupt.o
+                0x0000029f       0x5a ./out/Interrupt.o
  .debug_loclists
-                0x000002c9       0x17 ./out/Uart.o
+                0x000002f9       0x17 ./out/Uart.o
  .debug_loclists
-                0x000002e0      0x2b4 ./out/stdio.o
+                0x00000310      0x2b4 ./out/stdio.o
  .debug_loclists
-                0x00000594       0xda ./out/stdlib.o
+                0x000005c4       0xda ./out/stdlib.o
  .debug_loclists
-                0x0000066e       0x40 ./out/event.o
+                0x0000069e       0x40 ./out/event.o
  .debug_loclists
-                0x000006ae      0x1fd ./out/Kernel.o
+                0x000006de      0x1fd ./out/Kernel.o
  .debug_loclists
-                0x000008ab      0x181 ./out/msg.o
+                0x000008db      0x181 ./out/msg.o
  .debug_loclists
-                0x00000a2c       0x63 ./out/synch.o
+                0x00000a5c       0x63 ./out/synch.o
  .debug_loclists
-                0x00000a8f       0xed ./out/task.o
+                0x00000abf       0xed ./out/task.o
