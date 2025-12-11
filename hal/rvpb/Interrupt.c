@@ -16,6 +16,10 @@ extern volatile GicDist_t* GicDist;
 
 static InterHdlr_fptr sHandlers[INTERRUPT_HANDLER_NUM];
 
+// Fault injection: call through even if the handler table entry is NULL to
+// trigger a bad function pointer when interrupts are misconfigured.
+#define INJECT_NULL_IRQ_HANDLER 1
+
 void Hal_interrupt_init(void)
 {
     GicCpu->cpucontrol.bits.Enable = 1;
@@ -79,10 +83,17 @@ void Hal_interrupt_run_handler(void)
 {
     uint32_t interrupt_num = GicCpu->interruptack.bits.InterruptID;
 
-    if (sHandlers[interrupt_num] != NULL)
+    InterHdlr_fptr handler = sHandlers[interrupt_num];
+
+#if INJECT_NULL_IRQ_HANDLER
+    // This will fault if the handler entry was never registered (NULL).
+    handler();
+#else
+    if (handler != NULL)
     {
-        sHandlers[interrupt_num]();
+        handler();
     }
+#endif
 
     GicCpu->endofinterrupt.bits.InterruptID = interrupt_num;
 }

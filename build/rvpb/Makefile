@@ -49,9 +49,18 @@ LDFLAGS = -nostartfiles -nostdlib -nodefaultlibs -static -lgcc -Wl,--gc-sections
 navilos = $(OUTDIR)/navilos.axf
 navilos_bin = $(OUTDIR)/navilos.bin
 
+DEBUG_OUTDIR := $(OUTDIR)/debug
+debug_axf = $(DEBUG_OUTDIR)/debug.axf
+debug_map = $(DEBUG_OUTDIR)/debug.map
+debug_sym = $(DEBUG_OUTDIR)/debug.sym
+
+ASM_OBJS_DEBUG := $(patsubst $(TOP)/boot/$(TARGET)/%.S, $(DEBUG_OUTDIR)/%.os, $(ASM_SRCS))
+C_OBJS_DEBUG = $(patsubst %.c, $(DEBUG_OUTDIR)/%.o, $(C_SRCS))
+
 DISPLAY_OPTS ?= sdl
 
 .PHONY: all clean run run-gui run-gui-vc debug debug-gui debug-gui-vc gdb
+.PHONY: debug-build
 
 all: $(navilos)
 
@@ -85,12 +94,20 @@ gdb:
 
 kill:
 	kill -9 `ps aux | grep 'qemu' | awk 'NR==1{print $$2}'`
+
+# Build an unstripped, O0 debug image
+debug-build: $(debug_axf)
 	
 $(navilos): $(ASM_OBJS) $(C_OBJS) $(LINKER_SCRIPT)
 	mkdir -p $(OUTDIR)
 	$(LD) -n -T $(LINKER_SCRIPT) -o $(navilos) $(ASM_OBJS) $(C_OBJS) -Wl,-Map=$(MAP_FILE) $(LDFLAGS)
 	$(OD) -t $(navilos) > $(SYM_FILE)
 	$(OC) -O binary $(navilos) $(navilos_bin)
+
+$(debug_axf): $(ASM_OBJS_DEBUG) $(C_OBJS_DEBUG) $(LINKER_SCRIPT)
+	mkdir -p $(DEBUG_OUTDIR)
+	$(LD) -n -T $(LINKER_SCRIPT) -o $(debug_axf) $(ASM_OBJS_DEBUG) $(C_OBJS_DEBUG) -Wl,-Map=$(debug_map) $(LDFLAGS)
+	$(OD) -t $(debug_axf) > $(debug_sym)
 	
 $(OUTDIR)/%.os: %.S
 	mkdir -p $(shell dirname $@)
@@ -99,4 +116,12 @@ $(OUTDIR)/%.os: %.S
 $(OUTDIR)/%.o: %.c
 	mkdir -p $(shell dirname $@)
 	$(CC) -march=$(ARCH) -marm $(INC_DIRS) $(CFLAGS) -o $@ $<
+
+$(DEBUG_OUTDIR)/%.os: %.S
+	mkdir -p $(shell dirname $@)
+	$(CC) -march=$(ARCH) -marm $(INC_DIRS) $(CFLAGS) -O0 -o $@ $<
+
+$(DEBUG_OUTDIR)/%.o: %.c
+	mkdir -p $(shell dirname $@)
+	$(CC) -march=$(ARCH) -marm $(INC_DIRS) $(CFLAGS) -O0 -o $@ $<
 	

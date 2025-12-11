@@ -1,0 +1,870 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+                              ./out/debug/stdio.o (__aeabi_uidiv)
+/usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 ./out/debug/Entry.os
+ .bss           0x00000000        0x0 ./out/debug/Entry.os
+ .text          0x00000000        0x0 ./out/debug/Handler.o
+ .data          0x00000000        0x0 ./out/debug/Handler.o
+ .bss           0x00000000        0x0 ./out/debug/Handler.o
+ .text          0x00000000        0x0 ./out/debug/Main.o
+ .data          0x00000000        0x0 ./out/debug/Main.o
+ .bss           0x00000000        0x0 ./out/debug/Main.o
+ .text          0x00000000        0x0 ./out/debug/Interrupt.o
+ .data          0x00000000        0x0 ./out/debug/Interrupt.o
+ .bss           0x00000000        0x0 ./out/debug/Interrupt.o
+ .text.Hal_interrupt_disable
+                0x00000000       0xd4 ./out/debug/Interrupt.o
+ .text          0x00000000        0x0 ./out/debug/Regs.o
+ .data          0x00000000        0x0 ./out/debug/Regs.o
+ .bss           0x00000000        0x0 ./out/debug/Regs.o
+ .text          0x00000000        0x0 ./out/debug/Timer.o
+ .data          0x00000000        0x0 ./out/debug/Timer.o
+ .bss           0x00000000        0x0 ./out/debug/Timer.o
+ .bss.sTick_accum
+                0x00000000        0x4 ./out/debug/Timer.o
+ .text.interrupt_handler
+                0x00000000       0x88 ./out/debug/Timer.o
+ .text          0x00000000        0x0 ./out/debug/Uart.o
+ .data          0x00000000        0x0 ./out/debug/Uart.o
+ .bss           0x00000000        0x0 ./out/debug/Uart.o
+ .text          0x00000000        0x0 ./out/debug/stdio.o
+ .data          0x00000000        0x0 ./out/debug/stdio.o
+ .bss           0x00000000        0x0 ./out/debug/stdio.o
+ .text.Lcd_console_putc
+                0x00000000       0x24 ./out/debug/stdio.o
+ .text          0x00000000        0x0 ./out/debug/stdlib.o
+ .data          0x00000000        0x0 ./out/debug/stdlib.o
+ .bss           0x00000000        0x0 ./out/debug/stdlib.o
+ .text.memset   0x00000000       0x64 ./out/debug/stdlib.o
+ .text          0x00000000        0x0 ./out/debug/armcpu.o
+ .data          0x00000000        0x0 ./out/debug/armcpu.o
+ .bss           0x00000000        0x0 ./out/debug/armcpu.o
+ .text.enable_fiq
+                0x00000000       0x2c ./out/debug/armcpu.o
+ .text.disable_fiq
+                0x00000000       0x2c ./out/debug/armcpu.o
+ .text          0x00000000        0x0 ./out/debug/switch.o
+ .data          0x00000000        0x0 ./out/debug/switch.o
+ .bss           0x00000000        0x0 ./out/debug/switch.o
+ .text          0x00000000        0x0 ./out/debug/event.o
+ .data          0x00000000        0x0 ./out/debug/event.o
+ .bss           0x00000000        0x0 ./out/debug/event.o
+ .text          0x00000000        0x0 ./out/debug/Kernel.o
+ .data          0x00000000        0x0 ./out/debug/Kernel.o
+ .bss           0x00000000        0x0 ./out/debug/Kernel.o
+ .text.Kernel_flush_msg
+                0x00000000       0x58 ./out/debug/Kernel.o
+ .text.Kernel_lock_sem
+                0x00000000       0x34 ./out/debug/Kernel.o
+ .text.Kernel_unlock_sem
+                0x00000000       0x14 ./out/debug/Kernel.o
+ .text          0x00000000        0x0 ./out/debug/msg.o
+ .data          0x00000000        0x0 ./out/debug/msg.o
+ .bss           0x00000000        0x0 ./out/debug/msg.o
+ .text          0x00000000        0x0 ./out/debug/synch.o
+ .data          0x00000000        0x0 ./out/debug/synch.o
+ .bss           0x00000000        0x0 ./out/debug/synch.o
+ .text.Kernel_sem_test
+                0x00000000       0x54 ./out/debug/synch.o
+ .text.Kernel_sem_release
+                0x00000000       0x6c ./out/debug/synch.o
+ .text          0x00000000        0x0 ./out/debug/task.o
+ .data          0x00000000        0x0 ./out/debug/task.o
+ .bss           0x00000000        0x0 ./out/debug/task.o
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./out/debug/Entry.os
+LOAD ./out/debug/Handler.o
+LOAD ./out/debug/Main.o
+LOAD ./out/debug/Interrupt.o
+LOAD ./out/debug/Regs.o
+LOAD ./out/debug/Timer.o
+LOAD ./out/debug/Uart.o
+LOAD ./out/debug/stdio.o
+LOAD ./out/debug/stdlib.o
+LOAD ./out/debug/armcpu.o
+LOAD ./out/debug/switch.o
+LOAD ./out/debug/event.o
+LOAD ./out/debug/Kernel.o
+LOAD ./out/debug/msg.o
+LOAD ./out/debug/synch.o
+LOAD ./out/debug/task.o
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a
+                0x00000000                        . = 0x0
+
+.text           0x00000000      0x400
+ *(vector_start)
+ *(.text .rodata)
+ .text          0x00000000       0xd4 ./out/debug/Entry.os
+                0x00000000                vector_start
+                0x0000003c                vector_end
+ .rodata        0x000000d4      0x20b ./out/debug/Main.o
+ *fill*         0x000002df        0x1 
+ .rodata        0x000002e0        0x7 ./out/debug/stdio.o
+ *fill*         0x000002e7        0x1 
+ .text          0x000002e8      0x114 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+                0x000002e8                __udivsi3
+                0x000002e8                __aeabi_uidiv
+                0x000003dc                __aeabi_uidivmod
+ .text          0x000003fc        0x4 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+                0x000003fc                __aeabi_ldiv0
+                0x000003fc                __aeabi_idiv0
+
+.glue_7         0x00000400        0x0
+ .glue_7        0x00000400        0x0 linker stubs
+
+.glue_7t        0x00000400        0x0
+ .glue_7t       0x00000400        0x0 linker stubs
+
+.vfp11_veneer   0x00000400        0x0
+ .vfp11_veneer  0x00000400        0x0 linker stubs
+
+.v4_bx          0x00000400        0x0
+ .v4_bx         0x00000400        0x0 linker stubs
+
+.iplt           0x00000400        0x0
+ .iplt          0x00000400        0x0 ./out/debug/Entry.os
+
+.text.Irq_Handler
+                0x00000400       0x1c
+ .text.Irq_Handler
+                0x00000400       0x1c ./out/debug/Handler.o
+                0x00000400                Irq_Handler
+
+.text.Fiq_Handler
+                0x0000041c        0x8
+ .text.Fiq_Handler
+                0x0000041c        0x8 ./out/debug/Handler.o
+                0x0000041c                Fiq_Handler
+
+.text.Lcd_init  0x00000424       0xa8
+ .text.Lcd_init
+                0x00000424       0xa8 ./out/debug/Main.o
+
+.text.Lcd_console_init
+                0x000004cc       0xb0
+ .text.Lcd_console_init
+                0x000004cc       0xb0 ./out/debug/Main.o
+
+.text.Lcd_draw_char
+                0x0000057c      0x148
+ .text.Lcd_draw_char
+                0x0000057c      0x148 ./out/debug/Main.o
+
+.text.Lcd_copy_up
+                0x000006c4       0xc0
+ .text.Lcd_copy_up
+                0x000006c4       0xc0 ./out/debug/Main.o
+
+.text.Lcd_scroll
+                0x00000784       0xbc
+ .text.Lcd_scroll
+                0x00000784       0xbc ./out/debug/Main.o
+
+.text.Lcd_console_putc
+                0x00000840      0x100
+ .text.Lcd_console_putc
+                0x00000840      0x100 ./out/debug/Main.o
+                0x00000840                Lcd_console_putc
+
+.text.Handle_shutdown
+                0x00000940       0x1c
+ .text.Handle_shutdown
+                0x00000940       0x1c ./out/debug/Main.o
+
+.text.main      0x0000095c       0x5c
+ .text.main     0x0000095c       0x5c ./out/debug/Main.o
+                0x0000095c                main
+
+.text.Hw_init   0x000009b8       0x24
+ .text.Hw_init  0x000009b8       0x24 ./out/debug/Main.o
+
+.text.Kernel_init
+                0x000009dc       0xac
+ .text.Kernel_init
+                0x000009dc       0xac ./out/debug/Main.o
+
+.text.Printf_test
+                0x00000a88       0xc4
+ .text.Printf_test
+                0x00000a88       0xc4 ./out/debug/Main.o
+
+.text.Timer_test
+                0x00000b4c       0x60
+ .text.Timer_test
+                0x00000b4c       0x60 ./out/debug/Main.o
+
+.text.User_task0
+                0x00000bac      0x2bc
+ .text.User_task0
+                0x00000bac      0x2bc ./out/debug/Main.o
+                0x00000bac                User_task0
+
+.text.User_task1
+                0x00000e68       0xe4
+ .text.User_task1
+                0x00000e68       0xe4 ./out/debug/Main.o
+                0x00000e68                User_task1
+
+.text.User_task2
+                0x00000f4c       0x44
+ .text.User_task2
+                0x00000f4c       0x44 ./out/debug/Main.o
+                0x00000f4c                User_task2
+
+.text.Test_critical_section
+                0x00000f90       0x78
+ .text.Test_critical_section
+                0x00000f90       0x78 ./out/debug/Main.o
+
+.text.Hal_interrupt_init
+                0x00001008       0x9c
+ .text.Hal_interrupt_init
+                0x00001008       0x9c ./out/debug/Interrupt.o
+                0x00001008                Hal_interrupt_init
+
+.text.Hal_interrupt_enable
+                0x000010a4       0xcc
+ .text.Hal_interrupt_enable
+                0x000010a4       0xcc ./out/debug/Interrupt.o
+                0x000010a4                Hal_interrupt_enable
+
+.text.Hal_interrupt_register_handler
+                0x00001170       0x38
+ .text.Hal_interrupt_register_handler
+                0x00001170       0x38 ./out/debug/Interrupt.o
+                0x00001170                Hal_interrupt_register_handler
+
+.text.Hal_interrupt_run_handler
+                0x000011a8       0x74
+ .text.Hal_interrupt_run_handler
+                0x000011a8       0x74 ./out/debug/Interrupt.o
+                0x000011a8                Hal_interrupt_run_handler
+
+.text.Hal_timer_init
+                0x0000121c      0x194
+ .text.Hal_timer_init
+                0x0000121c      0x194 ./out/debug/Timer.o
+                0x0000121c                Hal_timer_init
+
+.text.Hal_timer_get_1ms_counter
+                0x000013b0       0x24
+ .text.Hal_timer_get_1ms_counter
+                0x000013b0       0x24 ./out/debug/Timer.o
+                0x000013b0                Hal_timer_get_1ms_counter
+
+.text.Hal_uart_init
+                0x000013d4       0xa0
+ .text.Hal_uart_init
+                0x000013d4       0xa0 ./out/debug/Uart.o
+                0x000013d4                Hal_uart_init
+
+.text.Hal_uart_put_char
+                0x00001474       0x5c
+ .text.Hal_uart_put_char
+                0x00001474       0x5c ./out/debug/Uart.o
+                0x00001474                Hal_uart_put_char
+
+.text.Hal_uart_get_char
+                0x000014d0       0x84
+ .text.Hal_uart_get_char
+                0x000014d0       0x84 ./out/debug/Uart.o
+                0x000014d0                Hal_uart_get_char
+
+.text.interrupt_handler
+                0x00001554       0xd8
+ .text.interrupt_handler
+                0x00001554       0xd8 ./out/debug/Uart.o
+
+.text.putstr    0x0000162c       0x74
+ .text.putstr   0x0000162c       0x74 ./out/debug/stdio.o
+                0x0000162c                putstr
+
+.text.debug_printf
+                0x000016a0       0x50
+ .text.debug_printf
+                0x000016a0       0x50 ./out/debug/stdio.o
+                0x000016a0                debug_printf
+
+.text.vsprintf  0x000016f0      0x280
+ .text.vsprintf
+                0x000016f0      0x280 ./out/debug/stdio.o
+                0x000016f0                vsprintf
+
+.text.utoa      0x00001970      0x114
+ .text.utoa     0x00001970      0x114 ./out/debug/stdio.o
+                0x00001970                utoa
+
+.text.delay     0x00001a84       0x4c
+ .text.delay    0x00001a84       0x4c ./out/debug/stdlib.o
+                0x00001a84                delay
+
+.text.memclr    0x00001ad0       0x5c
+ .text.memclr   0x00001ad0       0x5c ./out/debug/stdlib.o
+                0x00001ad0                memclr
+
+.text.enable_irq
+                0x00001b2c       0x2c
+ .text.enable_irq
+                0x00001b2c       0x2c ./out/debug/armcpu.o
+                0x00001b2c                enable_irq
+
+.text.disable_irq
+                0x00001b58       0x2c
+ .text.disable_irq
+                0x00001b58       0x2c ./out/debug/armcpu.o
+                0x00001b58                disable_irq
+
+.text.Arch_start
+                0x00001b84        0x8
+ .text.Arch_start
+                0x00001b84        0x8 ./out/debug/switch.o
+                0x00001b84                Arch_start
+
+.text.Arch_context_switching
+                0x00001b8c        0xc
+ .text.Arch_context_switching
+                0x00001b8c        0xc ./out/debug/switch.o
+                0x00001b8c                Arch_context_switching
+
+.text.Arch_Save_context
+                0x00001b98       0x24
+ .text.Arch_Save_context
+                0x00001b98       0x24 ./out/debug/switch.o
+                0x00001b98                Arch_Save_context
+
+.text.Arch_Restore_context
+                0x00001bbc       0x24
+ .text.Arch_Restore_context
+                0x00001bbc       0x24 ./out/debug/switch.o
+                0x00001bbc                Arch_Restore_context
+
+.text.Kernel_event_flag_init
+                0x00001be0       0x28
+ .text.Kernel_event_flag_init
+                0x00001be0       0x28 ./out/debug/event.o
+                0x00001be0                Kernel_event_flag_init
+
+.text.Kernel_event_flag_set
+                0x00001c08       0x40
+ .text.Kernel_event_flag_set
+                0x00001c08       0x40 ./out/debug/event.o
+                0x00001c08                Kernel_event_flag_set
+
+.text.Kernel_event_flag_clear
+                0x00001c48       0x44
+ .text.Kernel_event_flag_clear
+                0x00001c48       0x44 ./out/debug/event.o
+                0x00001c48                Kernel_event_flag_clear
+
+.text.Kernel_event_flag_check
+                0x00001c8c       0x4c
+ .text.Kernel_event_flag_check
+                0x00001c8c       0x4c ./out/debug/event.o
+                0x00001c8c                Kernel_event_flag_check
+
+.text.Kernel_start
+                0x00001cd8       0x18
+ .text.Kernel_start
+                0x00001cd8       0x18 ./out/debug/Kernel.o
+                0x00001cd8                Kernel_start
+
+.text.Kernel_yield
+                0x00001cf0       0x14
+ .text.Kernel_yield
+                0x00001cf0       0x14 ./out/debug/Kernel.o
+                0x00001cf0                Kernel_yield
+
+.text.Kernel_send_events
+                0x00001d04       0x88
+ .text.Kernel_send_events
+                0x00001d04       0x88 ./out/debug/Kernel.o
+                0x00001d04                Kernel_send_events
+
+.text.Kernel_wait_events
+                0x00001d8c       0x9c
+ .text.Kernel_wait_events
+                0x00001d8c       0x9c ./out/debug/Kernel.o
+                0x00001d8c                Kernel_wait_events
+
+.text.Kernel_send_msg
+                0x00001e28       0xc4
+ .text.Kernel_send_msg
+                0x00001e28       0xc4 ./out/debug/Kernel.o
+                0x00001e28                Kernel_send_msg
+
+.text.Kernel_recv_msg
+                0x00001eec       0x94
+ .text.Kernel_recv_msg
+                0x00001eec       0x94 ./out/debug/Kernel.o
+                0x00001eec                Kernel_recv_msg
+
+.text.Kernel_lock_mutex
+                0x00001f80       0x48
+ .text.Kernel_lock_mutex
+                0x00001f80       0x48 ./out/debug/Kernel.o
+                0x00001f80                Kernel_lock_mutex
+
+.text.Kernel_unlock_mutex
+                0x00001fc8       0x40
+ .text.Kernel_unlock_mutex
+                0x00001fc8       0x40 ./out/debug/Kernel.o
+                0x00001fc8                Kernel_unlock_mutex
+
+.text.Kernel_msgQ_init
+                0x00002008       0xac
+ .text.Kernel_msgQ_init
+                0x00002008       0xac ./out/debug/msg.o
+                0x00002008                Kernel_msgQ_init
+
+.text.Kernel_msgQ_is_empty
+                0x000020b4       0x88
+ .text.Kernel_msgQ_is_empty
+                0x000020b4       0x88 ./out/debug/msg.o
+                0x000020b4                Kernel_msgQ_is_empty
+
+.text.Kernel_msgQ_is_full
+                0x0000213c       0x90
+ .text.Kernel_msgQ_is_full
+                0x0000213c       0x90 ./out/debug/msg.o
+                0x0000213c                Kernel_msgQ_is_full
+
+.text.Kernel_msgQ_enqueue
+                0x000021cc      0x138
+ .text.Kernel_msgQ_enqueue
+                0x000021cc      0x138 ./out/debug/msg.o
+                0x000021cc                Kernel_msgQ_enqueue
+
+.text.Kernel_msgQ_dequeue
+                0x00002304      0x14c
+ .text.Kernel_msgQ_dequeue
+                0x00002304      0x14c ./out/debug/msg.o
+                0x00002304                Kernel_msgQ_dequeue
+
+.text.Kernel_msgQ_count
+                0x00002450       0x64
+ .text.Kernel_msgQ_count
+                0x00002450       0x64 ./out/debug/msg.o
+                0x00002450                Kernel_msgQ_count
+
+.text.Kernel_sem_init
+                0x000024b4       0x78
+ .text.Kernel_sem_init
+                0x000024b4       0x78 ./out/debug/synch.o
+                0x000024b4                Kernel_sem_init
+
+.text.Kernel_mutex_init
+                0x0000252c       0x38
+ .text.Kernel_mutex_init
+                0x0000252c       0x38 ./out/debug/synch.o
+                0x0000252c                Kernel_mutex_init
+
+.text.Kernel_mutex_lock
+                0x00002564       0x60
+ .text.Kernel_mutex_lock
+                0x00002564       0x60 ./out/debug/synch.o
+                0x00002564                Kernel_mutex_lock
+
+.text.Kernel_mutex_unlock
+                0x000025c4       0x54
+ .text.Kernel_mutex_unlock
+                0x000025c4       0x54 ./out/debug/synch.o
+                0x000025c4                Kernel_mutex_unlock
+
+.text.Kernel_task_init
+                0x00002618       0xb8
+ .text.Kernel_task_init
+                0x00002618       0xb8 ./out/debug/task.o
+                0x00002618                Kernel_task_init
+
+.text.Kernel_task_start
+                0x000026d0       0x3c
+ .text.Kernel_task_start
+                0x000026d0       0x3c ./out/debug/task.o
+                0x000026d0                Kernel_task_start
+
+.text.Kernel_task_create
+                0x0000270c       0xfc
+ .text.Kernel_task_create
+                0x0000270c       0xfc ./out/debug/task.o
+                0x0000270c                Kernel_task_create
+
+.text.Kernel_task_get_current_task_id
+                0x00002808       0x24
+ .text.Kernel_task_get_current_task_id
+                0x00002808       0x24 ./out/debug/task.o
+                0x00002808                Kernel_task_get_current_task_id
+
+.text.Kernel_task_scheduler
+                0x0000282c       0x50
+ .text.Kernel_task_scheduler
+                0x0000282c       0x50 ./out/debug/task.o
+                0x0000282c                Kernel_task_scheduler
+
+.text.Scheduler_round_robin_algorithm
+                0x0000287c       0x80
+ .text.Scheduler_round_robin_algorithm
+                0x0000287c       0x80 ./out/debug/task.o
+
+.rodata.font8x8_basic
+                0x000028fc      0x300
+ .rodata.font8x8_basic
+                0x000028fc      0x300 ./out/debug/Main.o
+
+.rel.dyn        0x00002bfc        0x0
+ .rel.iplt      0x00002bfc        0x0 ./out/debug/Entry.os
+
+.data
+ *(.data)
+
+.igot.plt       0x00002bfc        0x0
+ .igot.plt      0x00002bfc        0x0 ./out/debug/Entry.os
+
+.data.Uart      0x00002bfc        0x4
+ .data.Uart     0x00002bfc        0x4 ./out/debug/Regs.o
+                0x00002bfc                Uart
+
+.data.GicCpu    0x00002c00        0x4
+ .data.GicCpu   0x00002c00        0x4 ./out/debug/Regs.o
+                0x00002c00                GicCpu
+
+.data.GicDist   0x00002c04        0x4
+ .data.GicDist  0x00002c04        0x4 ./out/debug/Regs.o
+                0x00002c04                GicDist
+
+.data.Timer     0x00002c08        0x4
+ .data.Timer    0x00002c08        0x4 ./out/debug/Regs.o
+                0x00002c08                Timer
+
+.bss
+ *(.bss)
+ *(COMMON)
+
+.bss.lcd_console_row
+                0x00002c0c        0x4
+ .bss.lcd_console_row
+                0x00002c0c        0x4 ./out/debug/Main.o
+
+.bss.lcd_console_col
+                0x00002c10        0x4
+ .bss.lcd_console_col
+                0x00002c10        0x4 ./out/debug/Main.o
+
+.bss.shared_value
+                0x00002c14        0x4
+ .bss.shared_value
+                0x00002c14        0x4 ./out/debug/Main.o
+
+.bss.sHandlers  0x00002c18      0x3fc
+ .bss.sHandlers
+                0x00002c18      0x3fc ./out/debug/Interrupt.o
+
+.bss.sInternal_1ms_counter
+                0x00003014        0x4
+ .bss.sInternal_1ms_counter
+                0x00003014        0x4 ./out/debug/Timer.o
+
+.bss.sPrintf_buf
+                0x00003018      0x400
+ .bss.sPrintf_buf
+                0x00003018      0x400 ./out/debug/stdio.o
+
+.bss.sEventFlag
+                0x00003418        0x4
+ .bss.sEventFlag
+                0x00003418        0x4 ./out/debug/event.o
+
+.bss.sMsgQ      0x0000341c      0x618
+ .bss.sMsgQ     0x0000341c      0x618 ./out/debug/msg.o
+
+.bss.sSemMax    0x00003a34        0x4
+ .bss.sSemMax   0x00003a34        0x4 ./out/debug/synch.o
+
+.bss.sSem       0x00003a38        0x4
+ .bss.sSem      0x00003a38        0x4 ./out/debug/synch.o
+
+.bss.sMutex     0x00003a3c        0x8
+ .bss.sMutex    0x00003a3c        0x8 ./out/debug/synch.o
+
+.bss.gCurrent_tcb
+                0x00003a44        0x4
+ .bss.gCurrent_tcb
+                0x00003a44        0x4 ./out/debug/task.o
+                0x00003a44                gCurrent_tcb
+
+.bss.gNext_tcb  0x00003a48        0x4
+ .bss.gNext_tcb
+                0x00003a48        0x4 ./out/debug/task.o
+                0x00003a48                gNext_tcb
+
+.bss.sTask_list
+                0x00003a4c       0x30
+ .bss.sTask_list
+                0x00003a4c       0x30 ./out/debug/task.o
+
+.bss.sAllocated_tcb_index
+                0x00003a7c        0x4
+ .bss.sAllocated_tcb_index
+                0x00003a7c        0x4 ./out/debug/task.o
+
+.bss.sCurrent_tcb_index
+                0x00003a80        0x4
+ .bss.sCurrent_tcb_index
+                0x00003a80        0x4 ./out/debug/task.o
+                0x00040000                        . = 0x40000
+
+.fb             0x00040000    0x96000
+ *(.fb)
+ .fb            0x00040000    0x96000 ./out/debug/Main.o
+OUTPUT(./out/debug/debug.axf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x2b
+ .ARM.attributes
+                0x00000000       0x1d ./out/debug/Entry.os
+ .ARM.attributes
+                0x0000001d       0x2f ./out/debug/Handler.o
+ .ARM.attributes
+                0x0000004c       0x2f ./out/debug/Main.o
+ .ARM.attributes
+                0x0000007b       0x2f ./out/debug/Interrupt.o
+ .ARM.attributes
+                0x000000aa       0x2f ./out/debug/Regs.o
+ .ARM.attributes
+                0x000000d9       0x2f ./out/debug/Timer.o
+ .ARM.attributes
+                0x00000108       0x2f ./out/debug/Uart.o
+ .ARM.attributes
+                0x00000137       0x2f ./out/debug/stdio.o
+ .ARM.attributes
+                0x00000166       0x2f ./out/debug/stdlib.o
+ .ARM.attributes
+                0x00000195       0x2f ./out/debug/armcpu.o
+ .ARM.attributes
+                0x000001c4       0x2f ./out/debug/switch.o
+ .ARM.attributes
+                0x000001f3       0x2f ./out/debug/event.o
+ .ARM.attributes
+                0x00000222       0x2f ./out/debug/Kernel.o
+ .ARM.attributes
+                0x00000251       0x2f ./out/debug/msg.o
+ .ARM.attributes
+                0x00000280       0x2f ./out/debug/synch.o
+ .ARM.attributes
+                0x000002af       0x2f ./out/debug/task.o
+ .ARM.attributes
+                0x000002de       0x1c /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000002fa       0x1c /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 ./out/debug/Handler.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 ./out/debug/Main.o
+ .comment       0x00000026       0x27 ./out/debug/Interrupt.o
+ .comment       0x00000026       0x27 ./out/debug/Regs.o
+ .comment       0x00000026       0x27 ./out/debug/Timer.o
+ .comment       0x00000026       0x27 ./out/debug/Uart.o
+ .comment       0x00000026       0x27 ./out/debug/stdio.o
+ .comment       0x00000026       0x27 ./out/debug/stdlib.o
+ .comment       0x00000026       0x27 ./out/debug/armcpu.o
+ .comment       0x00000026       0x27 ./out/debug/switch.o
+ .comment       0x00000026       0x27 ./out/debug/event.o
+ .comment       0x00000026       0x27 ./out/debug/Kernel.o
+ .comment       0x00000026       0x27 ./out/debug/msg.o
+ .comment       0x00000026       0x27 ./out/debug/synch.o
+ .comment       0x00000026       0x27 ./out/debug/task.o
+
+.debug_line     0x00000000     0x1819
+ .debug_line    0x00000000       0x7a ./out/debug/Entry.os
+ .debug_line    0x0000007a       0x81 ./out/debug/Handler.o
+ .debug_line    0x000000fb      0x54d ./out/debug/Main.o
+ .debug_line    0x00000648      0x189 ./out/debug/Interrupt.o
+ .debug_line    0x000007d1       0x74 ./out/debug/Regs.o
+ .debug_line    0x00000845      0x157 ./out/debug/Timer.o
+ .debug_line    0x0000099c      0x1bd ./out/debug/Uart.o
+ .debug_line    0x00000b59      0x1ea ./out/debug/stdio.o
+ .debug_line    0x00000d43       0xe2 ./out/debug/stdlib.o
+ .debug_line    0x00000e25       0xa8 ./out/debug/armcpu.o
+ .debug_line    0x00000ecd       0xa5 ./out/debug/switch.o
+ .debug_line    0x00000f72       0xc5 ./out/debug/event.o
+ .debug_line    0x00001037      0x2bd ./out/debug/Kernel.o
+ .debug_line    0x000012f4      0x1a6 ./out/debug/msg.o
+ .debug_line    0x0000149a      0x134 ./out/debug/synch.o
+ .debug_line    0x000015ce      0x19a ./out/debug/task.o
+ .debug_line    0x00001768       0x67 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_line    0x000017cf       0x4a /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+.debug_line_str
+                0x00000000       0xb2
+ .debug_line_str
+                0x00000000       0xb2 ./out/debug/Entry.os
+                                 0x34 (size before relaxing)
+ .debug_line_str
+                0x000000b2       0x7e /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_line_str
+                0x000000b2       0x7e /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+.debug_info     0x00000000     0x483f
+ .debug_info    0x00000000       0x25 ./out/debug/Entry.os
+ .debug_info    0x00000025       0x8b ./out/debug/Handler.o
+ .debug_info    0x000000b0     0x109e ./out/debug/Main.o
+ .debug_info    0x0000114e      0x5c1 ./out/debug/Interrupt.o
+ .debug_info    0x0000170f      0xfc5 ./out/debug/Regs.o
+ .debug_info    0x000026d4      0x3b6 ./out/debug/Timer.o
+ .debug_info    0x00002a8a      0xb24 ./out/debug/Uart.o
+ .debug_info    0x000035ae      0x2e8 ./out/debug/stdio.o
+ .debug_info    0x00003896      0x146 ./out/debug/stdlib.o
+ .debug_info    0x000039dc       0x67 ./out/debug/armcpu.o
+ .debug_info    0x00003a43       0x9f ./out/debug/switch.o
+ .debug_info    0x00003ae2      0x220 ./out/debug/event.o
+ .debug_info    0x00003d02      0x4c8 ./out/debug/Kernel.o
+ .debug_info    0x000041ca      0x26a ./out/debug/msg.o
+ .debug_info    0x00004434      0x187 ./out/debug/synch.o
+ .debug_info    0x000045bb      0x20a ./out/debug/task.o
+ .debug_info    0x000047c5       0x3e /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_info    0x00004803       0x3c /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+.debug_abbrev   0x00000000     0x132b
+ .debug_abbrev  0x00000000       0x14 ./out/debug/Entry.os
+ .debug_abbrev  0x00000014       0x6f ./out/debug/Handler.o
+ .debug_abbrev  0x00000083      0x2fe ./out/debug/Main.o
+ .debug_abbrev  0x00000381      0x1be ./out/debug/Interrupt.o
+ .debug_abbrev  0x0000053f      0x122 ./out/debug/Regs.o
+ .debug_abbrev  0x00000661      0x186 ./out/debug/Timer.o
+ .debug_abbrev  0x000007e7      0x216 ./out/debug/Uart.o
+ .debug_abbrev  0x000009fd      0x150 ./out/debug/stdio.o
+ .debug_abbrev  0x00000b4d       0xf8 ./out/debug/stdlib.o
+ .debug_abbrev  0x00000c45       0x2f ./out/debug/armcpu.o
+ .debug_abbrev  0x00000c74       0x45 ./out/debug/switch.o
+ .debug_abbrev  0x00000cb9       0xe0 ./out/debug/event.o
+ .debug_abbrev  0x00000d99      0x172 ./out/debug/Kernel.o
+ .debug_abbrev  0x00000f0b      0x156 ./out/debug/msg.o
+ .debug_abbrev  0x00001061      0x100 ./out/debug/synch.o
+ .debug_abbrev  0x00001161      0x17c ./out/debug/task.o
+ .debug_abbrev  0x000012dd       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x00001305       0x26 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+.debug_aranges  0x00000000      0x440
+ .debug_aranges
+                0x00000000       0x20 ./out/debug/Entry.os
+ .debug_aranges
+                0x00000020       0x28 ./out/debug/Handler.o
+ .debug_aranges
+                0x00000048       0x98 ./out/debug/Main.o
+ .debug_aranges
+                0x000000e0       0x40 ./out/debug/Interrupt.o
+ .debug_aranges
+                0x00000120       0x18 ./out/debug/Regs.o
+ .debug_aranges
+                0x00000138       0x30 ./out/debug/Timer.o
+ .debug_aranges
+                0x00000168       0x38 ./out/debug/Uart.o
+ .debug_aranges
+                0x000001a0       0x40 ./out/debug/stdio.o
+ .debug_aranges
+                0x000001e0       0x30 ./out/debug/stdlib.o
+ .debug_aranges
+                0x00000210       0x38 ./out/debug/armcpu.o
+ .debug_aranges
+                0x00000248       0x38 ./out/debug/switch.o
+ .debug_aranges
+                0x00000280       0x38 ./out/debug/event.o
+ .debug_aranges
+                0x000002b8       0x70 ./out/debug/Kernel.o
+ .debug_aranges
+                0x00000328       0x48 ./out/debug/msg.o
+ .debug_aranges
+                0x00000370       0x48 ./out/debug/synch.o
+ .debug_aranges
+                0x000003b8       0x48 ./out/debug/task.o
+ .debug_aranges
+                0x00000400       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x00000420       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+.debug_str      0x00000000     0x1413
+ .debug_str     0x00000000     0x1413 ./out/debug/Entry.os
+                                 0x40 (size before relaxing)
+ .debug_str     0x00001413      0x159 ./out/debug/Handler.o
+ .debug_str     0x00001413      0xb2a ./out/debug/Main.o
+ .debug_str     0x00001413      0x3e9 ./out/debug/Interrupt.o
+ .debug_str     0x00001413      0x6cf ./out/debug/Regs.o
+ .debug_str     0x00001413      0x62a ./out/debug/Timer.o
+ .debug_str     0x00001413      0x899 ./out/debug/Uart.o
+ .debug_str     0x00001413      0x1d4 ./out/debug/stdio.o
+ .debug_str     0x00001413      0x170 ./out/debug/stdlib.o
+ .debug_str     0x00001413       0xee ./out/debug/armcpu.o
+ .debug_str     0x00001413      0x172 ./out/debug/switch.o
+ .debug_str     0x00001413      0x50e ./out/debug/event.o
+ .debug_str     0x00001413      0x713 ./out/debug/Kernel.o
+ .debug_str     0x00001413      0x239 ./out/debug/msg.o
+ .debug_str     0x00001413      0x1d1 ./out/debug/synch.o
+ .debug_str     0x00001413      0x264 ./out/debug/task.o
+ .debug_str     0x00001413       0xa5 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)
+ .debug_str     0x00001413       0xa6 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_dvmd_tls.o)
+
+.debug_rnglists
+                0x00000000      0x2bc
+ .debug_rnglists
+                0x00000000       0x19 ./out/debug/Handler.o
+ .debug_rnglists
+                0x00000019       0x77 ./out/debug/Main.o
+ .debug_rnglists
+                0x00000090       0x2e ./out/debug/Interrupt.o
+ .debug_rnglists
+                0x000000be       0x21 ./out/debug/Timer.o
+ .debug_rnglists
+                0x000000df       0x28 ./out/debug/Uart.o
+ .debug_rnglists
+                0x00000107       0x2d ./out/debug/stdio.o
+ .debug_rnglists
+                0x00000134       0x1f ./out/debug/stdlib.o
+ .debug_rnglists
+                0x00000153       0x25 ./out/debug/armcpu.o
+ .debug_rnglists
+                0x00000178       0x25 ./out/debug/switch.o
+ .debug_rnglists
+                0x0000019d       0x25 ./out/debug/event.o
+ .debug_rnglists
+                0x000001c2       0x5f ./out/debug/Kernel.o
+ .debug_rnglists
+                0x00000221       0x36 ./out/debug/msg.o
+ .debug_rnglists
+                0x00000257       0x31 ./out/debug/synch.o
+ .debug_rnglists
+                0x00000288       0x34 ./out/debug/task.o
+
+.debug_frame    0x00000000      0xa80
+ .debug_frame   0x00000000       0x50 ./out/debug/Handler.o
+ .debug_frame   0x00000050      0x1f8 ./out/debug/Main.o
+ .debug_frame   0x00000248       0xb0 ./out/debug/Interrupt.o
+ .debug_frame   0x000002f8       0x6c ./out/debug/Timer.o
+ .debug_frame   0x00000364       0x8c ./out/debug/Uart.o
+ .debug_frame   0x000003f0       0xcc ./out/debug/stdio.o
+ .debug_frame   0x000004bc       0x70 ./out/debug/stdlib.o
+ .debug_frame   0x0000052c       0x90 ./out/debug/armcpu.o
+ .debug_frame   0x000005bc       0x50 ./out/debug/switch.o
+ .debug_frame   0x0000060c       0x90 ./out/debug/event.o
+ .debug_frame   0x0000069c      0x160 ./out/debug/Kernel.o
+ .debug_frame   0x000007fc       0xd0 ./out/debug/msg.o
+ .debug_frame   0x000008cc       0xd0 ./out/debug/synch.o
+ .debug_frame   0x0000099c       0xc4 ./out/debug/task.o
+ .debug_frame   0x00000a60       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/libgcc.a(_udivsi3.o)

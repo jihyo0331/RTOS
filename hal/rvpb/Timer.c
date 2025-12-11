@@ -18,6 +18,10 @@ static void interrupt_handler(void);
 static uint32_t sInternal_1ms_counter;
 static uint32_t sTick_accum;
 
+// Fault injection: leave the timer handler unregistered so IRQ delivery jumps
+// to a NULL entry (paired with INJECT_NULL_IRQ_HANDLER in Interrupt.c).
+#define INJECT_NULL_IRQ_HANDLER 1
+
 void Hal_timer_init(void)
 {
     // inerface reset
@@ -46,7 +50,11 @@ void Hal_timer_init(void)
 
     // Register Timer interrupt handler
     Hal_interrupt_enable(TIMER_INTERRUPT);
+#if INJECT_NULL_IRQ_HANDLER
+    // Intentionally skip registration to provoke a NULL handler call.
+#else
     Hal_interrupt_register_handler(interrupt_handler, TIMER_INTERRUPT);
+#endif
 }
 
 uint32_t Hal_timer_get_1ms_counter(void)

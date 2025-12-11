@@ -7,6 +7,10 @@
 extern KernelTcb_t* gCurrent_tcb;
 extern KernelTcb_t* gNext_tcb;
 
+// Fault injection: deliberately unbalance the restore sequence to corrupt LR/PC
+// and crash during/after a context switch.
+#define INJECT_CONTEXT_POP_MISMATCH 1
+
 __attribute__ ((naked)) void Arch_start(void)
 {
 	__asm__ volatile ("B Arch_Restore_context");
@@ -40,6 +44,11 @@ __attribute__ ((naked)) void Arch_Restore_context(void)
     // restore next task context from the next task stack
     __asm__ ("POP  {r0}");
     __asm__ ("MSR   cpsr, r0");
+#if INJECT_CONTEXT_POP_MISMATCH
+    // Pop one fewer register so the final PC is loaded from the wrong slot.
+    __asm__ ("POP  {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11}");
+#else
     __asm__ ("POP  {r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12}");
+#endif
     __asm__ ("POP  {pc}");
 }
